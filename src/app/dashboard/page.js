@@ -5,16 +5,13 @@ import MainComponent from "../Admin/MainHeader";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
 
-// const breadcrumbItems = [
-//   { label: "Home", href: "/", active: false },
-//   { label: "Dashboard", href: "", active: true },
-// ];
+const breadcrumbItems = [{ label: "Dashboard", href: "", active: true }];
 
 const Dashboard = () => {
   const user = useSelector((state) => state.user);
   return (
     <>
-      {/* <Breadcrumb items={breadcrumbItems} /> */}
+      <Breadcrumb items={breadcrumbItems} />
       <div className="row welcome-card rounded p-5 position-relative">
         <div className="col-md-6">
           <h4>
