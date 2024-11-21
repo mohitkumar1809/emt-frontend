@@ -48,12 +48,17 @@ const Login = () => {
     try {
       const response = await logInService.loginUser(userData);
       const resData = response?.data;
-      console.log(resData);
+      const resStatus = resData?.status;
+      if (resStatus == 200) {
+        console.log(resData, "Login Success");
+        router.push("/dashboard");
+      } else {
+        setError(resData?.message);
+      }
     } catch (error) {
       console.error(error);
-      setError(error?.response?.data?.message);
-    } finally {
       setLoader(false);
+      setError("Something went wrong. Please try again later.");
     }
   };
 
