@@ -1,0 +1,231 @@
+.signup-area {
+    background: #fff;
+    padding: 30px 0px;
+    .container {
+        width: 650px;
+        margin: 0 auto;
+        background: #e7eaea;
+        padding: 20px;
+        border-radius: 5px;
+        .signup-inner {
+            .input-group {
+                #imageUpload {
+                    border-color: transparent;
+                }
+            }
+            .col-md-6 {
+                position: relative;
+            }
+            .cross-icon {
+                height: 25px;
+                width: 25px;
+                background: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                justify-content: center;
+                right: 0;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            .signup-container {
+                background: #fff;
+                padding: 15px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                .row {
+                    .input-group {
+                        .input-group-text {
+                            border-bottom-right-radius: 0;
+                            border-top-right-radius: 0;
+                        }
+                        .form-control.dropdown-option {
+                            line-height: 1.8;
+                            height: 40px;
+                        }
+                    }
+                }
+                .radio-wrapper {
+                    margin-top: 1rem;
+                    .radio-item {
+                        label {
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .kyc_radiobutton {
+                    .radio-wrapper {
+                        margin-bottom: 20px;
+                    }
+                    .input-group {
+                        .input-form {
+                            border: none;
+                            border-bottom: 1px solid #dfe2e1e8;
+                            border-radius: 0;
+                            &:focus {
+                                border-bottom: 1px solid #0aad0a;
+                            }
+                        }
+                    }
+                }
+                h1 {
+                    text-align: center;
+                    font-size: 24px;
+                    color: #0f58a5;
+                    margin-bottom: 0;
+                }
+                .form-group {
+                    margin-bottom: 10px;
+                    align-items: stretch;
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    width: 100%;
+                    .input-group-text {
+                        i {
+                            color: #ccc;
+                        }
+                    }
+                    .input-form {
+                        line-height: 2;
+                        height: 40px;
+                    }
+                    .p-calendar {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .p-inputtext {
+                            height: auto;
+                        }
+                    }
+                }
+                p {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 1.6;
+                    color: $fc-gray;
+                }
+                .form-check {
+                    .form-check-label {
+                        margin: 0 5px;
+                        > a {
+                            margin-left: 5px;
+                            border-bottom: 1px solid #ff0000;
+                        }
+                    }
+                }
+                .divider-text {
+                    position: relative;
+                    text-align: center;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    span {
+                        padding: 7px;
+                        font-size: 12px;
+                        position: relative;   
+                        z-index: 2;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        border-bottom: 1px solid #ddd;
+                        top: 55%;
+                        left: 0;
+                        z-index: 1;
+                      }
+                }
+            }
+            .upline-container {
+                .form-group {
+                    margin-top: 0.875rem;
+                }
+                .referal-container {
+                    > p {
+                        margin: 0;   
+                    }
+                }
+            }
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    > a {
+                        margin: 12px 3px;
+                        color: $fc-heading-color;
+                        font-size: 0.7rem;
+                    }
+                    > p {
+                        margin: 12px 1px;
+                        color: $fc-blue;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+            .sign-btn {
+                width: 400px;
+                margin: 0 auto;
+                .btn {
+                    justify-content: center;
+                }
+            }
+            .signup {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.p-dialog-content {
+    .terms-content {
+        ul, li {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+.p-dialog-mask {
+    .p-dialog.p-component.signup-dialog {
+        .p-dialog-header {
+            display: none;
+        }
+        .p-dialog-content {
+            color: #222;
+            min-height: auto;
+        }
+        .p-dialog-footer {
+            border: none;
+            > a {
+                margin-right: 10px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.6;
+                color: $fc-blue;
+            }
+        }
+    }
+}
+
+.p-dialog-mask {
+    .p-dialog.p-component.verify-number {
+        .p-dialog-content {
+            .input-form {
+                width: 50%;
+                flex: none;
+            }
+        }
+        .p-dialog-footer {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .signup-area {
+        .container {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.product-list-page .mobile-filter {
+    display: none;
+}
+.protact button.accordion-button {
+    color: black;
+    font-weight: 600;
+}
+
+
+/************Search Page************/
+
+.abfooter-area {
+    position: relative;
+    background: #f1f1f1;
+    padding: 40px 0px;
+    border-bottom: 1px solid rgb(223, 226, 225);
+    text-align: center;
+}
+.abfooter-area h1{
+    margin: 0 0 15px;
+    color: #000;
+    font-size: 28px;
+    line-height: 1;
+}
+.abfooter-area p{
+    margin-bottom: 0;
+}
+.abfooter-list li {
+    position: relative;
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.search-list {
+    padding: 60px 0 30px;
+}
+.search-list .search-item{
+    margin-bottom: 30px;
+}
+.search-list .card-product {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.search-list  .card-body {
+    padding: 0;
+}
+/**********Product Details************/
+.product-details {
+    padding: 20px 0 60px;
+}
+.product-image {
+    width: 100%;
+    height: 450px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.product-details .pro-content{
+    position: relative;
+}
+.product-slider {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto;
+    height: auto;
+}
+
+.prodcut-video {
+    width: 100%;
+    overflow: hidden;
+    height: 450px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.prodcut-video video {
+    width: 100%;
+}
+.product-details .out-of-stock-label{
+    padding: 10px 50px;
+    text-align: center;
+    transform: none;
+    width: auto;
+    position: static;
+    display: inline-block;
+}
+.input-groups {
+    border-radius: 5px;
+}
+.prodcuct-additional-details{
+    padding: 60px 0;
+    color: #000;
+}
+.prodcuct-additional-details .nav-lb-tab {
+    border-bottom: 1px solid  rgb(223, 226, 225);
+}
+.prodcuct-additional-details  .nav-lb-tab .nav-item {
+    margin-right: 10px;
+}
+.prodcuct-additional-details  .nav-lb-tab .nav-item:last-child {
+    margin-right: 0px;
+}
+.prodcuct-additional-details .nav-lb-tab .nav-item .nav-link{
+    text-transform: capitalize;
+    margin-bottom: 0;
+    padding: 10px 30px;
+    border: 0;
+}
+.prodcuct-additional-details .nav-lb-tab .nav-item .nav-link.active,
+.prodcuct-additional-details .nav-lb-tab .nav-item .nav-link:hover{
+    background-color: white;
+    border-bottom: 2px solid #005BAA;
+}
+.prodcuct-additional-details p, .prodcuct-additional-details  li {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.frequently-title{
+    padding-top: 60px;
+}
+.frequently-grid{
+    padding-bottom: 60px;
+}
+.frequently-grid:empty{
+    display: none;
+}
+.listing .card-body{
+    overflow: hidden;
+}
+.variants {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    background: #005baa;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 600;
+    width: 100px;
+    line-height: 1.1;
+    padding: 5px;
+    border-radius: 10px;
+}
+.variants small{
+    font-size: 10px;
+}
+
+/*********No Record Found********/
+.no-record-found{
+    padding: 30px 0 60px;
+}
+.no-record-inner{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-record-inner h3{
+    color: #000;
+    margin: 20px 0;
+}
+.no-record-inner p{
+    font-size: 18px;
+    color: #000;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width:1024px) and (min-width:768px){
+    .product-image,.prodcut-video{
+        height: 400px;
+    }
+}
+@media (max-width:767px){
+    .product-list-page .mobile-filter {
+        display: block;
+    }
+    .product-list-page .product-listing{
+        padding: 0;
+    }
+    .product-list-page .product-filter-sidebar,
+    .product-list-page .listing{
+        padding: 0;   
+    }
+    .product-list-page .theiaStickySidebar {
+        display: none;
+        margin-top: 20px;
+    }
+    .product-list-page .theiaStickySidebar.show{
+        display: block;
+    }
+    .search-list {
+        padding: 40px 0 0px;
+    }
+    .search-list .search-item {
+        margin-bottom: 40px;
+    }
+    .product-details {
+        padding: 20px 0 30px;
+    }    
+    .product-image,.prodcut-video{
+        height: 300px;
+    }
+    .product-details .pro-content{
+        margin-top: 40px;
+    }
+    .prodcuct-additional-details {
+        padding: 30px 0;
+    }
+    .prodcuct-additional-details .col-md-12{
+        padding: 0;
+    }
+}

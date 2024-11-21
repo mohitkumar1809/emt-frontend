@@ -1,0 +1,110 @@
+.success-stories {
+    padding: 0;
+    .mb-3 {
+        color: $fc-heading-color;
+    }
+}
+.success-story-wrapper {
+    padding: 0px 0 60px 0;
+    .slick-slide {
+        .success-story {
+            cursor: initial;
+            .title-wrapper {
+                .title {
+                    background: #000;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 8px;
+                    width: 100%;
+                    margin-bottom: 4px;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                .subtitle {
+                    height: 3.1rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: unset;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+            img {
+                height: 300px;
+                object-fit: cover;
+                object-position: top;
+            }
+            .btn {
+                color: $fc-heading-color;
+                border: none;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .success-stories {
+        .container {
+            display: flex !important;
+            justify-content: center;
+        }
+        .slick-initialized {
+            width: 250px;
+        }
+    }
+}
+
+@media (min-width: 490px) and (max-width: 600px) {
+    .success-stories {
+        .container {
+            display: flex !important;
+            justify-content: center;
+        }
+        .slick-initialized {
+            width: 425px;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .success-stories {
+        .container {
+            display: flex !important;
+            justify-content: center;
+        }
+        .slick-initialized {
+            width: 550px;
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .success-stories {
+        .container {
+            display: flex !important;
+            justify-content: center;
+        }
+        .slick-initialized {
+            width: 700px;
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .success-stories {
+        .container {
+            display: flex !important;
+            justify-content: center;
+        }
+        .slick-initialized {
+            width: 800px;
+        }
+    }
+}

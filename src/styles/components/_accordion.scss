@@ -1,0 +1,26 @@
+.accordion {
+    .accordion-item {
+        .accordion-header {
+            padding: 1rem 1.25rem;
+            font-size: 0.875rem;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            line-height: 1.6 !important;
+            align-items: center;
+            i {
+                font-size: 1rem;
+            }
+            &.active {
+                background: #e7f7e7;
+                color: #119f11;
+                i {
+                    color: #119f11;
+                }
+            }
+        }
+        .accordion-content {
+            padding: 1rem 1.25rem;
+        }
+    }
+}

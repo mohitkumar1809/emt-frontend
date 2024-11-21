@@ -1,0 +1,30 @@
+.tblWrapper {
+    .table {
+        width: 100%;
+        border: 1px solid #e1e5de;
+        border-collapse: collapse;
+        border-left: none;
+        border-right: none;
+        th {
+            color: #444;
+            text-transform: uppercase;
+            border: 1px solid #e1e5de;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 12px 10px !important;
+            text-align: left;
+            line-height: 1.6;
+        }
+        td {
+            text-transform: uppercase;
+            border: 1px solid #e1e5de;
+            padding: 12px 10px;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.6;
+            a {
+                color: #005BAA;
+            }
+        }
+    }
+}

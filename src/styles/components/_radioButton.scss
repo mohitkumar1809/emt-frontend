@@ -1,0 +1,58 @@
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+    .radio-item {
+        display: flex;
+        align-items: center;
+        margin: 0px 5px;
+        label {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #3d3d3d;
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 15px;
+                height: 15px;
+                margin: 0 5px;
+                line-height: 20px;
+                border-radius: 50%;
+                border: 1.5px solid #179948;
+                background-image: none !important;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+
+                &:checked {
+                    background-color: #179948;
+                    border-color: #179948;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .radio-wrapper {
+        label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #005baa;
+        }
+        .radio-item {
+            label {
+                font-size: 13px;
+                font-weight: 500;
+                input {
+                    width: 14px;
+                    height: 14px;
+                    line-height: 14px;
+                    border-radius: 50%;
+                    border: 1.5px solid #179948;
+                }
+            }
+        }
+    }
+}

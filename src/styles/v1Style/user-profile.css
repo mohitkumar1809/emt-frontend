@@ -1,0 +1,147 @@
+.user-profile {
+    padding: 40px 0 60px;
+    background: white;
+    background-image: url(/images/Vestige-con.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    visibility: visible;
+    background-size: 500px auto;
+    background-position: right bottom;
+    color: #000;
+}
+.user-profile-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    background:rgba(0,0,0,0.1);  
+}
+.user-profile .col-md-9{
+    margin: 0 auto;
+}
+.user-profile .profile-card{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.user-profile .profile-card:last-child{
+    margin-bottom: 0;
+}
+
+.profile-card-header {
+    padding: 16px;
+    border-bottom: 1px solid #cccccc;
+    font-weight: 600;
+    font-size: 18px;
+    color: #005BAA;
+}
+.profile-card-content{
+    padding: 16px;
+    font-size: 16px;
+}
+.profile-card-content p:last-child{
+    margin-bottom: 0;
+}
+
+.user-profile .profile-image {
+    max-height: 330px;
+    display: flex;
+    justify-content: center;
+}
+.profile-image-inner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 330px;
+}
+.edit-image{
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #189a49;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;
+}
+.edit-image:hover{
+    background-color: #005BAA; 
+}
+.edit-image button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-weight: 600;
+}
+.user-profile  img{
+    height:330px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.edit-profile-inner{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000;
+    line-height: 26px;
+}
+.edit-profile img{
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+.edit-profile .dialog-body {
+    max-height: max-content;
+}
+
+.p-dialog-mask .p-dialog.p-component.edit-profile .p-dialog-content {
+    min-height: 340px;
+}
+
+.edit-profile .p-dialog-footer .btn {
+    margin: 5px;
+}
+
+@media(max-width:1024px){
+    .user-profile .col-md-9{
+        width: 100%;
+    }
+}
+@media(max-width:991px) and (min-width:768px){
+    .user-profile .col-md-5,.user-profile .col-md-7 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media(max-width:767px){
+    .user-profile {
+        padding: 20px 0 40px;
+        background-size: 300px auto;
+    }
+    .user-profile-inner {
+        padding: 20px;
+        border-radius: 20px;
+      
+    }
+    .user-profile .profile-card{
+        margin-bottom: 20px;
+    }
+    .user-profile .profile-card:last-child{
+        margin-bottom: 20px;
+    }
+    .user-profile .col-md-12.mt-7 {
+        padding: 0;
+        margin-top: 0 !important;
+    }
+    .user-profile .col-md-5,.user-profile .col-md-7 {
+        padding: 0;
+    }
+}

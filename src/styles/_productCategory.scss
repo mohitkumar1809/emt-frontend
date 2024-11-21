@@ -1,0 +1,57 @@
+.prodcut-banners{
+    padding: 0px 0 60px 0;
+    .section-title {
+        text-transform: capitalize;
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+        color: $fc-heading-color;
+    }
+    .pro-underarea {
+        position: relative;
+        .pro-title {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            padding: 10px 15px;
+            p {
+                color: #fff;
+                font-size: 20px;
+                margin-bottom: 0px;
+                text-align: left;
+                font-weight: 500;
+            }
+            span {
+                color: #fff;
+                font-size: 15px;
+                margin-bottom: 0px;
+                text-align: left;
+                font-weight: 400;
+            }
+        }
+        &.one {
+            margin-bottom: 24px;
+        }
+        &.p3 {
+            .pro-title {
+                background: #89594b;
+            }
+        }
+        &.p2 {
+            .pro-title {
+                background: #b4d500;
+            }
+        }
+        .pro-title {
+            background: #1a8e85;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+    .pro-underarea {
+        margin-bottom: 15px;
+        span {
+            display: none !important;
+        }
+    }
+}

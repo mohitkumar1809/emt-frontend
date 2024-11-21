@@ -1,0 +1,239 @@
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    width: 100%; }
+    .header-top {
+      padding: 10px 0;
+  }
+  .header-logo img {
+      width: 80px;
+      height:auto;
+  }
+  .sticky-header .distributor-btn {
+      background: #198754;
+      color: #fff;
+      padding: 3px 15px;
+      font-size: 14px;
+  }
+  .header-bottom {
+      position: relative;
+  }
+  .header-bottom a.head-bankpan {
+      color: #fff;
+      padding: 5px 8px;
+      font-size: 14px;
+      text-decoration: none;
+  }
+  @media (min-width: 992px) {
+    .main-menu .menu-list-item.active .icon,
+    .main-menu .menu-list-item:hover .icon {
+      stroke: var(--secondary-color); }
+    .header-bottom {
+      position: relative; }
+    .nav-item-sub {
+      padding: 8px 30px; }
+    .submenu {
+      padding: 10px 0; }
+    .main-menu {
+      margin-left: -20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: -20px;
+      margin-bottom: 0; }
+    .main-menu > .menu-list-item {
+      padding: 0px 0px 15px 20px;
+      cursor: pointer;
+     }
+     .main-menu > .menu-list-item a {
+      color: #015ba9;
+      font-size: 14px;
+    }
+    .dashprofile-area .col-md-3 {
+      padding: 0px;
+  }
+  .col-10 {
+     padding: 0px;
+  }
+  .col-4 {
+     padding: 0px;
+  }
+    .header-1 .main-menu > .menu-list-item {
+      padding: 28px 20px;
+      cursor: pointer; }
+    .main-menu-2 > .menu-list-item {
+      padding: 29px 20px; }
+    .has-dropdown {
+      position: relative; }
+    .mega-menu-header {
+      -ms-display: flex;
+      -webkit-display: flex;
+      display: -webkit-box;
+      display: flex;
+      -ms-align-items: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .open-submenu {
+      padding-left: 5px; }
+    .submenu-transform {
+      position: absolute;
+      z-index: 99;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      top: 90%;
+      left: 0;
+      width: auto;
+      min-width: 200px; }
+      .has-megamenu .submenu-transform {
+        width: 100%;
+        background-color: #fff; }
+      .has-dropdown .submenu-transform {
+        left: -10px; }
+    .megamenu-container {
+      -ms-display: flex;
+      -webkit-display: flex;
+      display: -webkit-box;
+      display: flex;
+      -ms-justify-content: center;
+      -webkit-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 0 35px;
+      margin-left: -40px; }
+      .megamenu-container > .nav-item-sub {
+        width: 25%;
+        padding: 0;
+        padding-left: 40px;
+        padding-top: 35px; }
+    .has-megamenu .megamenu-transform {
+      position: relative;
+      top: 0;
+      left: 0;
+      border: none; }
+      .has-megamenu .megamenu-transform .nav-item-sub {
+        padding: 20px 0 0; }
+    .submenu-transform > .container {
+      padding: 0 10px; }
+    .megamenu-heading,
+    .megamenu-heading:focus,
+    .megamenu-heading:hover {
+      font-size: 14px;
+      font-weight: 500;
+      color: #000 !important;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 7px;
+      text-transform: uppercase; }
+    .submenu-transform-desktop {
+      opacity: 0;
+      visibility: hidden;
+      -ms-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .menu-list-item:hover .submenu-transform-desktop {
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+       }
+       }
+       .dashprofile-area {
+        background: #045aa40d;
+        padding: 30px 0px;
+        }
+        .dashprofile-area img {
+        width: 100%;
+        height: 280px;
+       }
+       .dashpersonal-inner img {
+        width: 25px;
+        margin-bottom: 15px;
+        height: auto;
+       }
+       .dashcontact-inner img {
+       width: 25px;
+       margin-bottom: 15px;
+       height: auto;
+       }
+      .dashpersonal-inner {
+      background: #015ba9;
+      padding: 15px;
+       height: 280px;
+      }
+      .dashcontact-inner{
+      padding: 15px;
+       }
+       .dashpersonal-inner h2 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 15px;
+      }
+      .dashpersonal-inner p {
+      font-size: 15px;
+      color: #fff;
+      margin: 0px;
+      }
+      .dashcontact-inner h2 {
+      color: #015ba9;
+      font-size: 20px;
+      margin-bottom: 15px;
+      }
+      .dashcontact-inner p {
+      font-size: 15px;
+      color: #015ba9;
+      margin: 0px;
+      }
+      @media (min-width: 0px) and (max-width: 767px){
+      .sticky-header .distributor-btn {
+      background: #198754;
+      color: #fff;
+      padding: 5px;
+      margin: 0px;
+      margin-top: 2px;
+      font-size: 12px;
+      width: 170px;
+  }
+  .menu-list-item {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .main-menu > .menu-list-item a {
+      color: #015ba9;
+      font-size: 14px;
+  }
+  a.head-bankpan {
+      background: #c40606;
+      color: #fff!important;
+      padding: 5px 15px;
+      font-size: 14px!important;
+      text-decoration: none;
+  }
+  .offcanvas .logo-main img{
+  width: 40%;
+  }
+  .dashprofile-area img {
+      width: 100%;
+      height: auto;
+  }
+  .dashpersonal-inner img {
+      width: 25px;
+      margin-bottom: 15px;
+      height: auto;
+  }
+  .dashcontact-inner img {
+      width: 25px;
+      margin-bottom: 15px;
+      height: auto;
+  }
+  }

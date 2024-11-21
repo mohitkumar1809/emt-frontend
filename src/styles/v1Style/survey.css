@@ -1,0 +1,50 @@
+.survey-modal {
+  z-index: 2147483002;
+}
+.survey-modal .dialog-body {
+  max-height: calc(100vh - 200px);
+  min-height: 100px;
+}
+
+.survey-modal .dialog-footer {
+  justify-content: space-between;
+}
+
+.p-connected-overlay-enter-done {
+  z-index: 2147483003 !important;
+}
+
+.form-contorl .form-element .selection-box.unselcted {
+  border: 1px solid black;
+}
+
+.form-contorl .form-element .selection-box.selected {
+  border: 1px solid #005baa;
+  background: #005baa;
+  color: #ffffff;
+}
+
+.form-contorl .form-element .selection-box {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.form-contorl .childbox .selected-item {
+  margin: 5px;
+}
+
+.form-contorl .childbox {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.survey-modal .modal-dialog {
+  max-width: 800px;
+}
+
+.Toastify__toast-container {
+  z-index: 2147483004 !important;
+}

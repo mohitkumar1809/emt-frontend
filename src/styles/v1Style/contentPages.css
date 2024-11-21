@@ -1,0 +1,283 @@
+/***********About Page***************/
+
+.vestigemanagement-area {
+    padding: 60px 0px;
+    width: 100%;
+    background: white;
+}
+
+.vestigemanagement-area .d-flex {
+    margin: 0 -15px;
+}
+
+.vestigemanagement-area .d-flex>.text-decoration-none {
+    padding: 0 15px;
+}
+
+.vestigemanagement-area .manage-heading {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.vestigemanagement-area .manage-heading h1 {
+    color: #005baa;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.vestigemanagement-area .manage-heading p {
+    font-size: 16px;
+    color: #000;
+    line-height: 26px;
+}
+
+.vestigemanagement-area img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.vestigemanagement-area h2 {
+    color: #005baa;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.vestigemanagement-area h2 span {
+    color: #005baa;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.way-planarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.way-planarea .way-inner h1 {
+    color: #005baa;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.way-planarea .col {
+    border-right: 1.5px solid #fff;
+    margin-bottom: 50px;
+}
+
+.way-planarea .way-inner {
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.way-planarea .way-inner h2 {
+    color: #005baa;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.way-planarea .way-inner p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.marketing-planarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.marketing-planarea h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.marketing-planarea p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.marketing-inner h2 {
+    margin-bottom: 40px;
+}
+
+.marketing-planarea .marketing-inner {
+    padding: 45px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.enter-planarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.enter-planarea .enter-inner h1 {
+    color: #005baa;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.enterinner-box {
+    text-align: center;
+    border: 5px solid #189a49;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.enterinner-box img {
+    width: 60px;
+    margin-bottom: 30px;
+    height: 60px;
+}
+
+.enterinner-box h2 {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+
+.vestigeabt-area {
+    position: relative;
+    padding: 60px 0px;
+}
+
+.vestigeabt-area img {
+    width: 100%;
+}
+
+.vestigeabt-area h1 {
+    color: #005baa;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.vestigeabt-area p {
+    font-size: 16px;
+    color: #000;
+    line-height: 26px;
+}
+
+.vestigeabt-area.two img {
+    width: 100%;
+    margin-top: 20px !important;
+}
+
+
+.vestigeabt-area .col-md-6 {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.notification{
+    padding: 60px 0 40px;
+}
+
+.notification-item{
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background: #f3f3f3;
+}
+.notification-item img{
+    border-radius: 8px;
+}
+
+.notification p.lead {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+    .vestigemanagement-area img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .vestigemanagement-area .d-flex>.text-decoration-none {
+        width: 33.33%;
+    }
+
+    .way-planarea .col-md-3 {
+        width: 33.33%;
+    }
+    .vestigeabt-area .my-auto {
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .vestigemanagement-area {
+        padding: 40px 0px 20px;
+    }
+
+    .vestigemanagement-area .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .vestigemanagement-area .d-flex>.text-decoration-none {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vestigemanagement-area .card.card-product.mb-lg-4 {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .vestigemanagement-area .text-truncate {
+        height: auto;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .suces .read-more {
+        display: none;
+    }
+
+    .way-planarea .col-md-3 {
+        border-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .way-planarea .col-md-3:last-child {
+        margin-bottom: 0;
+    }
+
+    .vestigeabt-area {
+        position: relative;
+        /* padding: 40px 0 !important; */
+    }
+
+    .vestigeabt-area img {
+        margin-top: 0px !important;
+        margin-bottom: 15px;
+    }
+}
