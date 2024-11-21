@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import Loader from "@/components/Loader";
 import ToastMessage from "@/components/ToastMessage";
