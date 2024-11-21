@@ -2,9 +2,11 @@
 import logInService from "@/auth/services/loginService";
 import Loader from "@/components/Loader";
 import ToastMessage from "@/components/ToastMessage";
+import { loginUser } from "@/redux/actions/userAction";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const [loginDetails, setLoginDetails] = useState({
@@ -17,6 +19,7 @@ const Login = () => {
   const [error, setError] = useState("");
 
   const router = useRouter();
+  const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -50,7 +53,8 @@ const Login = () => {
       const resData = response?.data;
       const resStatus = resData?.status;
       if (resStatus == 200) {
-        console.log(resData, "Login Success");
+        dispatch(loginUser(resData.result));
+        localStorage.setItem("isAuthenticated", true);
         router.push("/dashboard");
       } else {
         setError(resData?.message);
@@ -61,6 +65,13 @@ const Login = () => {
       setError("Something went wrong. Please try again later.");
     }
   };
+
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem("isAuthenticated");
+    if (isAuthenticated) {
+      router.push("/dashboard");
+    }
+  }, []);
 
   return (
     <>
