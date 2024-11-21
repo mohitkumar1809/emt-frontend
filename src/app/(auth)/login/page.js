@@ -1,12 +1,28 @@
 "use client";
-import logInService from "@/auth/services/loginService";
+import Link from "next/link";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/navigation";
+
 import Loader from "@/components/Loader";
 import ToastMessage from "@/components/ToastMessage";
 import { loginUser } from "@/redux/actions/userAction";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import logInService from "@/auth/services/loginService";
+import { setSideNavMenu } from "@/redux/actions/sideNavMenuAction";
+
+const transformedKey = (key) => {
+  return (
+    "/" +
+    key
+      .split(" ")
+      .map((word, index) =>
+        index === 0
+          ? word.toLowerCase()
+          : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+      )
+      .join("")
+  );
+};
 
 const Login = () => {
   const [loginDetails, setLoginDetails] = useState({
@@ -29,6 +45,23 @@ const Login = () => {
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
     setLoginDetails({ ...loginDetails, [name]: checked });
+  };
+
+  const setMenuItems = (e) => {
+    let menuNames = Object.keys(e);
+    const updatedMenu = menuNames?.map((i, index) => {
+      return {
+        MenuID: index + 1,
+        ParentMenuID: 0,
+        MenuName: i,
+        MenuPath: transformedKey(i),
+        MenuOrder: index + 1,
+        Level: 0,
+        subItems: [],
+        iconName: "home",
+      };
+    });
+    dispatch(setSideNavMenu(updatedMenu));
   };
 
   const handleLogin = async (e) => {
@@ -54,6 +87,7 @@ const Login = () => {
       const resStatus = resData?.status;
       if (resStatus == 200) {
         dispatch(loginUser(resData.result));
+        setMenuItems(resData.result?.allowedmoduleWithActions);
         localStorage.setItem("isAuthenticated", true);
         router.push("/dashboard");
       } else {
