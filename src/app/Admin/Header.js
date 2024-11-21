@@ -1,14 +1,9 @@
 import React from "react";
-
-const sidebarIconStyle = {
-  cursor: "pointer",
-  fontWeight: 900,
-  fontSize: "1.5rem",
-  lineHeight: "0.04167em",
-  verticalAlign: "-0.125em",
-};
+import { useSelector } from "react-redux";
 
 const Header = ({ title }) => {
+  const user = useSelector((state) => state.user);
+  const name = user?.firstName + " " + user?.lastName;
   return (
     <div className="admin-header">
       <div className="container-fluid">
@@ -16,8 +11,8 @@ const Header = ({ title }) => {
           <button
             className="navbar-toggler collapsed"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#admin-sideNav"
+            // data-bs-toggle="offcanvas"
+            // data-bs-target="#admin-sideNav"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,27 +26,27 @@ const Header = ({ title }) => {
             </svg>
           </button>
           <div className="d-flex align-items-center justify-content-center">
-            <i className="pi pi-bars me-4" style={sidebarIconStyle} />
             <div className="page_title">{title}</div>
           </div>
           <ul className="user-items">
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link"
+                // dropdown-toggle
                 href="#"
                 id="userDropdown"
                 role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                // data-bs-toggle="dropdown"
+                // aria-expanded="false"
               >
                 <div className="user-details">
                   <div className="user-icon">
                     <img src="Avatar.svg" />
                   </div>
-                  KELVIN LEE
+                  {name}
                 </div>
               </a>
-              <ul
+              {/* <ul
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="userDropdown"
               >
@@ -61,7 +56,7 @@ const Header = ({ title }) => {
                 <li>
                   <a className="dropdown-item">Logout</a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
           </ul>
         </div>
