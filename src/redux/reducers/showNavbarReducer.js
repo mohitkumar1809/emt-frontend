@@ -4,7 +4,7 @@ const initialState = {
 
 const showNavbarReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "SHOW_NAVBAR":
+    case "SET_NAVBAR":
       return {
         ...state,
         showNavbar: action.payload,

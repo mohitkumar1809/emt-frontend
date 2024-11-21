@@ -1,5 +1,5 @@
 const initialState = {
-  loader: true,
+  loader: false,
 };
 
 const loaderReducer = (state = initialState, action) => {

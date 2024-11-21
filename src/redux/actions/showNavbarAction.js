@@ -1,6 +1,6 @@
 export const setNavbar = (navbar) => {
   return {
-    type: "TOGGLE_NAVBAR",
+    type: "SET_NAVBAR",
     payload: navbar,
   };
 };
