@@ -3,6 +3,7 @@ import React from "react";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
 import MainComponent from "../../components/MainHeader";
+import CallSummaryInfoCards from "@/components/CallSummaryInfoCards";
 
 const breadcrumbItems = [
   { label: "Dashboard", href: "/dashboard", active: false },
@@ -13,7 +14,7 @@ const Dashboard = () => {
   return (
     <>
       <Breadcrumb items={breadcrumbItems} />
-      <div className="row rounded p-5 position-relative"></div>
+      <CallSummaryInfoCards />
     </>
   );
 };
