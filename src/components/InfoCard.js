@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { Doughnut, Line } from "react-chartjs-2";
+import React from "react";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -12,9 +11,8 @@ import {
   Title,
   Legend,
 } from "chart.js";
-import Loader from "./Loader";
 import { useSelector } from "react-redux";
-import { useRouter } from "next/navigation";
+import { Doughnut, Line } from "react-chartjs-2";
 
 ChartJS.register(
   ArcElement,
@@ -36,91 +34,11 @@ const doughnutOptions = {
   },
 };
 
-const graphOptions = {
-  layout: {
-    padding: {
-      bottom: 30,
-      top: 30,
-    },
-  },
-  scales: {
-    y: {
-      beginAtZero: true,
-    },
-  },
-};
-
-const sampleData = {
-  drawActiveElementsOnTop: true,
-  labels: ["January", "February", "March", "April", "May", "June"],
-  datasets: [
-    {
-      label: "DS1",
-      data: [202.9, 309.32, 758.49, 306.31, 305.62, 308.37],
-      backgroundColor: "rgb(23 153 72)",
-      borderColor: "rgb(23 153 72)",
-      borderWidth: 2,
-      fill: true,
-    },
-    {
-      label: "DS2",
-      data: [
-        2763087.33, 2524624.06, 2706022.1, 2773912.39, 2757876.64, 2664357.42,
-      ],
-      backgroundColor: "rgb(0 91 170)",
-      borderColor: "rgb(0 91 170)",
-      borderWidth: 2,
-      fill: false,
-    },
-    {
-      label: "DS3",
-      data: [
-        2763290.23, 2524933.38, 2706780.59, 2774218.7, 2758182.26, 2664665.79,
-      ],
-      fill: false,
-      backgroundColor: "#80d4ff",
-      borderColor: "#80d4ff",
-      borderWidth: 2,
-    },
-  ],
-};
-
-const graphData = {
-  drawActiveElementsOnTop: true,
-  labels: "Data Sets",
-  datasets: [
-    {
-      label: "My Logs",
-      data: 30,
-      backgroundColor: "rgb(23 153 72)",
-      borderColor: "rgb(23 153 72)",
-      borderWidth: 2,
-      fill: true,
-    },
-    {
-      label: "Group Logs",
-      data: 49,
-      backgroundColor: "rgb(0 91 170)",
-      borderColor: "rgb(0 91 170)",
-      borderWidth: 2,
-      fill: false,
-    },
-    {
-      label: "Total Logs",
-      data: 23,
-      fill: false,
-      backgroundColor: "#80d4ff",
-      borderColor: "#80d4ff",
-      borderWidth: 2,
-    },
-  ],
-};
-
 const doughnutData = {
-  labels: ["Pending", "Approved"],
+  labels: ["Rejected", "Approved"],
   datasets: [
     {
-      label: "Data Sets",
+      label: "Calling Sets",
       data: [11, 27],
       backgroundColor: ["#0082E0", "#FF318E"],
       hoverBackgroundColor: ["#004CBF", "#C30A5B"],
@@ -129,15 +47,88 @@ const doughnutData = {
   ],
 };
 
-const InfoCard = ({ keyName, type }) => {
-  const [loader, setLoader] = useState(false);
+const graphOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  scales: {
+    y: {
+      type: "linear",
+      position: "left",
+      beginAtZero: true,
+      title: {
+        display: true,
+        text: "Values (Small Scale)",
+      },
+    },
+    y1: {
+      type: "linear",
+      position: "right",
+      beginAtZero: true,
+      grid: {
+        drawOnChartArea: false,
+      },
+      title: {
+        display: true,
+        text: "Values (Large Scale)",
+      },
+    },
+    x: {
+      title: {
+        display: true,
+        text: "Months",
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      position: "top",
+    },
+    tooltip: {
+      mode: "index",
+      intersect: false,
+    },
+  },
+};
 
+const sampleData = {
+  labels: ["January", "February", "March", "April"],
+  datasets: [
+    {
+      label: "IND",
+      data: [20, 309, 758, 306],
+      backgroundColor: "rgba(23, 153, 72, 0.5)",
+      borderColor: "rgb(23 153 72)",
+      borderWidth: 2,
+      fill: true,
+      yAxisID: "y",
+    },
+    {
+      label: "AUS",
+      data: [2763, 2524, 2706, 2773],
+      backgroundColor: "rgba(0, 91, 170, 0.5)",
+      borderColor: "rgb(0 91 170)",
+      borderWidth: 2,
+      fill: true,
+      yAxisID: "y1",
+    },
+    {
+      label: "NZE",
+      data: [3290, 2523, 2706, 2774],
+      backgroundColor: "rgba(128, 212, 255, 0.5)",
+      borderColor: "#80d4ff",
+      borderWidth: 2,
+      fill: true,
+      yAxisID: "y1",
+    },
+  ],
+};
+
+const InfoCard = ({ keyName, type }) => {
   const user = useSelector((state) => state.user);
   const keyDetails = user?.allowedmoduleWithActions[keyName] || [];
 
   return (
     <>
-      {loader && <Loader />}
       <div className="row mt-12">
         {keyDetails?.map((i, index) => {
           return (
@@ -147,13 +138,15 @@ const InfoCard = ({ keyName, type }) => {
                   <h3>{i?.name}</h3>
                 </div>
                 <div className="survey-chart">
-                  <div className="h-auto w-auto">
-                    {type === "doughnut" ? (
+                  {index % 2 !== 0 ? (
+                    <div className="h-auto w-auto">
                       <Doughnut data={doughnutData} options={doughnutOptions} />
-                    ) : (
+                    </div>
+                  ) : (
+                    <div className="h-100 w-100">
                       <Line data={sampleData} options={graphOptions} />
-                    )}
-                  </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
