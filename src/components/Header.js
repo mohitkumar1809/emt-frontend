@@ -1,12 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-
-// userTypesEnum = {
-//   "admin":1,
-//   "manager":2,
-//   "agent":3
-// }
+import { Tooltip } from "primereact/tooltip";
 
 const Header = ({ title }) => {
   const router = useRouter();
@@ -15,22 +10,22 @@ const Header = ({ title }) => {
   const name = user?.firstName + " " + user?.lastName;
 
   const getUserType = () => {
-    let user;
+    let userr;
     switch (user?.userType) {
       case 1:
-        user = "Admin";
+        userr = "Admin";
         break;
       case 2:
-        user = "Manager";
+        userr = "Manager";
         break;
       case 3:
-        user = "Agent";
+        userr = "Agent";
         break;
       default:
-        user = "Agent";
+        userr = "Agent";
         break;
     }
-    return user;
+    return userr;
   };
 
   const handleLogout = () => {
@@ -77,7 +72,13 @@ const Header = ({ title }) => {
               </a>
             </li>
             <li className="nav-link ms-2" style={{ cursor: "pointer" }}>
-              <i className="pi pi-sign-out" onClick={handleLogout} />
+              <i
+                className="pi pi-sign-out"
+                onClick={handleLogout}
+                data-pr-tooltip="Logout"
+                data-pr-position="bottom"
+              />
+              <Tooltip target=".pi-sign-out" />
             </li>
           </ul>
         </div>
