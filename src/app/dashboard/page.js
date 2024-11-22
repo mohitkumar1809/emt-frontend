@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
-import MainComponent from "../../components/Admin/MainHeader";
+import MainComponent from "../../components/MainHeader";
 
 const breadcrumbItems = [{ label: "Dashboard", href: "", active: true }];
 

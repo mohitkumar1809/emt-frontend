@@ -2,7 +2,7 @@
 import React from "react";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
-import MainComponent from "../../components/Admin/MainHeader";
+import MainComponent from "../../components/MainHeader";
 
 const breadcrumbItems = [
   { label: "Dashboard", href: "/dashboard", active: false },
