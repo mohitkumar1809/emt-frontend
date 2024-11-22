@@ -1,1 +1,1 @@
-export const EMT_URL = "http://localhost:3000";
+export const EMT_URL = "http://3.7.156.148:8092";
