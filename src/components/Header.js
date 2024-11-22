@@ -1,17 +1,39 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-import { useDispatch, useSelector } from "react-redux";
-import { logoutUser } from "@/redux/actions/userAction";
+
+// userTypesEnum = {
+//   "admin":1,
+//   "manager":2,
+//   "agent":3
+// }
 
 const Header = ({ title }) => {
   const router = useRouter();
-  const dispatch = useDispatch();
 
   const user = useSelector((state) => state.user);
   const name = user?.firstName + " " + user?.lastName;
 
+  const getUserType = () => {
+    let user;
+    switch (user?.userType) {
+      case 1:
+        user = "Admin";
+        break;
+      case 2:
+        user = "Manager";
+        break;
+      case 3:
+        user = "Agent";
+        break;
+      default:
+        user = "Agent";
+        break;
+    }
+    return user;
+  };
+
   const handleLogout = () => {
-    dispatch(logoutUser());
     localStorage.removeItem("isAuthenticated");
     router.push("/login");
   };
@@ -42,7 +64,15 @@ const Header = ({ title }) => {
                   <div className="user-icon">
                     <img src="Avatar.svg" />
                   </div>
-                  {name}
+                  <div className="d-flex flex-sm-column">
+                    {name}
+                    <span
+                      className="fw-normal mt-1"
+                      style={{ fontSize: "10px" }}
+                    >
+                      {getUserType()}
+                    </span>
+                  </div>
                 </div>
               </a>
             </li>

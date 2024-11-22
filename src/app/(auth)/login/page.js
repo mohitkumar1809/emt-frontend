@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 import Loader from "@/components/Loader";
 import ToastMessage from "@/components/ToastMessage";
-import { loginUser } from "@/redux/actions/userAction";
+import { loginUser, logoutUser } from "@/redux/actions/userAction";
 import logInService from "@/auth/services/loginService";
 import { setSideNavMenu } from "@/redux/actions/sideNavMenuAction";
 
@@ -104,6 +104,8 @@ const Login = () => {
     const isAuthenticated = localStorage.getItem("isAuthenticated");
     if (isAuthenticated) {
       router.push("/dashboard");
+    } else {
+      dispatch(logoutUser());
     }
   }, []);
 

@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
 import MainComponent from "../../components/MainHeader";
-import InfoCard from "@/components/InfoCard";
 
 const breadcrumbItems = [{ label: "Dashboard", href: "", active: true }];
 
@@ -36,9 +35,6 @@ const Dashboard = () => {
         <div className="col-md-6">
           <img src="Welcome-Card.svg" />
         </div>
-      </div>
-      <div className="row rounded p-5 position-relative">
-        <InfoCard type="graph" keyName="Dashboard" />
       </div>
     </>
   );
