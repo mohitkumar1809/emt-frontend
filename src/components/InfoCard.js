@@ -99,6 +99,8 @@ const InfoCard = ({ keyName, type }) => {
   const user = useSelector((state) => state.user);
   const keyDetails = user?.allowedmoduleWithActions[keyName];
 
+  console.log(keyDetails);
+
   return (
     <>
       {loader && <Loader />}
