@@ -1,19 +1,26 @@
+import { logoutUser } from "@/redux/actions/userAction";
+import { useRouter } from "next/navigation";
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Header = ({ title }) => {
+  const router = useRouter();
+  const dispatch = useDispatch();
+
   const user = useSelector((state) => state.user);
   const name = user?.firstName + " " + user?.lastName;
+
+  const handleLogout = () => {
+    dispatch(logoutUser());
+    localStorage.removeItem("isAuthenticated");
+    router.push("/login");
+  };
+
   return (
     <div className="admin-header">
       <div className="container-fluid">
         <div className="admin-header-inner">
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            // data-bs-toggle="offcanvas"
-            // data-bs-target="#admin-sideNav"
-          >
+          <button className="navbar-toggler collapsed" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={32}
@@ -29,16 +36,8 @@ const Header = ({ title }) => {
             <div className="page_title">{title}</div>
           </div>
           <ul className="user-items">
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link"
-                // dropdown-toggle
-                href="#"
-                id="userDropdown"
-                role="button"
-                // data-bs-toggle="dropdown"
-                // aria-expanded="false"
-              >
+            <li>
+              <a className="nav-link" href="#" role="button">
                 <div className="user-details">
                   <div className="user-icon">
                     <img src="Avatar.svg" />
@@ -46,17 +45,9 @@ const Header = ({ title }) => {
                   {name}
                 </div>
               </a>
-              {/* <ul
-                className="dropdown-menu dropdown-menu-end"
-                aria-labelledby="userDropdown"
-              >
-                <li>
-                  <a className="dropdown-item">Dashboard</a>
-                </li>
-                <li>
-                  <a className="dropdown-item">Logout</a>
-                </li>
-              </ul> */}
+            </li>
+            <li className="nav-link ms-2" style={{ cursor: "pointer" }}>
+              <i className="pi pi-sign-out" onClick={handleLogout} />
             </li>
           </ul>
         </div>

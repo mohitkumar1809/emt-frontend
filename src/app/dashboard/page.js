@@ -1,14 +1,24 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import MainComponent from "../Admin/MainHeader";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
+import { useRouter } from "next/navigation";
 
 const breadcrumbItems = [{ label: "Dashboard", href: "", active: true }];
 
 const Dashboard = () => {
+  const router = useRouter();
   const user = useSelector((state) => state.user);
+
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem("isAuthenticated");
+    if (!isAuthenticated) {
+      router.push("/login");
+    }
+  }, []);
+
   return (
     <>
       <Breadcrumb items={breadcrumbItems} />
