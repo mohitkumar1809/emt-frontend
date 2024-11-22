@@ -1,0 +1,250 @@
+.vestige-mainbanner {
+    padding: 0px 0 60px 0;
+    .carousel {
+        position: relative;
+        .carousel-indicators {
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            left: 0;
+            margin-bottom: 1rem;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            [data-bs-target] {
+                background-clip: padding-box;
+                background-color: #fff;
+                border: 0;
+                border-bottom: 10px solid transparent;
+                border-top: 10px solid transparent;
+                box-sizing: content-box;
+                cursor: pointer;
+                flex: 0 1 auto;
+                height: 3px;
+                margin-left: 3px;
+                margin-right: 3px;
+                opacity: 0.5;
+                padding: 0;
+                text-indent: -999px;
+                transition: opacity 0.6s ease;
+                width: 30px;
+            }
+            .active {
+                opacity: 1;
+            }
+        }
+
+        [data-bs-theme="dark"] .carousel .carousel-indicators [data-bs-target],
+        [data-bs-theme="dark"].carousel .carousel-indicators [data-bs-target] {
+            background-color: #000;
+        }     
+
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            &:after {
+                display: block;
+                content: "";
+                clear: both;
+            }
+
+            .carousel-item {
+                display: none;
+                float: left;
+                width: 100%;
+                position: relative;
+                backface-visibility: hidden;
+                margin-right: -100%;
+                transition: transform 0.4s ease-in-out;
+
+                &.carousel-item-next,
+                &.carousel-item-prev,
+                &.active {
+                    display: block;
+                }
+
+                &.active.carousel-item-end,
+                &.carousel-item-next:not(.carousel-item-start) {
+                    transform: translateX(100%);
+                }
+
+                &.active.carousel-item-start,
+                &.carousel-item-prev:not(.carousel-item-end) {
+                    transform: translateX(-100%);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+
+
+        .carousel-control-next,.carousel-control-prev {
+            align-items: center;
+            background: none;
+            border: 0;
+            bottom: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            opacity: 0.5;
+            padding: 0;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            transition: opacity 0.15s ease;
+            width: 15%;
+            z-index: 1;
+            &:focus, &:hover {
+                opacity: 0.9;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            .carousel-control-next-icon, 
+            .carousel-control-prev-icon {
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                background-size: 100% 100%;
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+
+            .carousel-control-prev-icon {
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+            }
+
+            .carousel-control-next-icon {
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            }
+
+        }
+
+        .carousel-control-prev {
+            left: 0;
+        }
+        
+        .carousel-control-next {
+            right: 0;
+        }
+
+        .visually-hidden,
+        .visually-hidden-focusable:not(:focus):not(:focus-within) {
+            clip: rect(0, 0, 0, 0) !important;
+            border: 0 !important;
+            height: 1px !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            white-space: nowrap !important;
+            width: 1px !important;
+
+            &:not(caption).visually-hidden:not(caption) {
+                position: absolute !important;
+            }
+        }
+
+        .carousel-caption {
+            position: absolute;
+            left: 15%;
+            top: 0;
+            width: 30%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+            padding: 0;
+            bottom: 0;
+            h1 {
+                font-size: 42px;
+                line-height: 45px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 19px;
+                line-height: 28px;
+                font-weight: 400;
+                margin: 15px 0px 0;
+            }
+            a.btn.btn-light {
+                padding: 4px 24px;
+                background: #179948;
+                border: #179948;
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            b, strong {
+                font-weight: bold;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .carousel-indicators [data-bs-target],
+            .carousel-inner .carousel-item,
+            .carousel-control-next,
+            .carousel-control-prev {
+                transition: none;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .carousel-caption {
+                h1 {
+                    font-size: 26px;
+                    line-height: 34px;
+                    color: white;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-inner .carousel-item img {
+                height: 400px;
+                object-fit: cover;
+                object-position: 80%;
+            }
+
+            .carousel-control-next, 
+            .carousel-control-prev {
+                display: none;
+            }
+
+            .carousel-caption {
+                left: 0;
+                top: 0;
+                right: 0;
+                width: 90%;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            .vestige-mainbanner .carousel-caption {
+                left: 10%;
+                width: 60%;
+                align-items: flex-start;
+            }
+
+            .vestige-mainbanner .carousel-control-next, 
+            .vestige-mainbanner .carousel-control-prev {
+                width: 10%;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.updatemobile-area {
+    background: #fff;
+    margin: 40px 0px;
+}
+
+.updatemobile-heading {
+    background: #fff;
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.updatemobile-heading h2 {
+    padding: 40px;
+    text-align: center;
+    background: #005baa;
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.updatemobile-inner {
+    padding: 20px;
+}
+
+.updatemobile-inner h3 {
+    color: #02325c;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.updatemobile-inner p {
+    color: #a49797;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.updatemobile-inner ul {
+    list-style: none;
+}
+
+.updatemobile-inner ul li {
+    color: #a49797;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.updatemobile-inner ul li a {
+    color: #005baa;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.updatemobile-inner a.arrow-link {
+    float: right;
+    margin-top: -105px;
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #005baa;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .updatemobile-heading {
+        width: 100%;
+    }
+
+    .updatemobile-area {
+        margin: 0px;
+    }
+
+    .updatemobile-inner a.arrow-link {
+        float: right;
+        margin-top: -140px;
+        margin-right: 10px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        background: #005baa;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+    }
+}

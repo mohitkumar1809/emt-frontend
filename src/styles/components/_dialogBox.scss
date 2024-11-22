@@ -1,0 +1,129 @@
+.p-dialog-mask {
+    background: rgb(23 23 23 / 50%);
+    .p-dialog {
+        &.p-component {
+            width: 100%;
+            max-width: 30%;
+            background: white;
+            border: 1px solid white;
+            border-radius: 0.75rem;
+            color: var(--fc-modal-color);
+            display: flex;
+            flex-direction: column;
+            outline: 0;
+            pointer-events: auto;
+            position: relative;
+            .p-dialog-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                border-bottom: 1px solid lightgray !important;
+                // margin-bottom: 10px;
+                padding: 15px;
+                height: auto;
+                .p-dialog-header-icons {
+                    margin-top: 8px;
+                }
+                .p-dialog-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #005baa;
+                }
+            }
+            .p-dialog-content {
+                height: auto;
+                min-height: 100px;
+                padding: 15px;
+                text-align: left;
+                max-height: 300px;
+                overflow-y: auto;
+                flex: 1 1 auto;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.6;
+            }
+            .p-dialog-footer {
+                padding: 15px;
+                border-top: 1px solid lightgrey;
+                display: flex;
+                justify-content: flex-end;
+            }
+            @media screen and (max-width: 576px) {
+                width: 100% !important;
+                max-width: 550px;
+            }
+            @media (min-width: 577px) and (max-width: 1100px) {
+                width: 100% !important;
+                max-width: 600px;
+            }
+            @media (min-width: 1100px) and (max-width: 1300px) {
+                width: 100% !important;
+                max-width: 45%;
+            }
+            //award dialog
+            &.award-dialog {
+                max-width: 500px;
+                .p-dialog-header {
+                    margin-bottom: 0;
+                }
+                .p-dialog-content {
+                    min-height: 380px;
+                    padding: 30px;
+                    .dialog-content {
+                        max-height: 300px;
+                        display: flex;
+                        justify-content: center;
+                        .slick-slider {
+                            .slick-arrow {
+                                background-color: #001e2b17 !important;
+                                &.slick-prev {
+                                    position: absolute;
+                                    bottom: -50px;
+                                    left: auto;
+                                    right: 80px;
+                                    margin: 0 auto !important;
+                                    top: auto;
+                                }
+                                &.slick-next {
+                                    position: absolute;
+                                    bottom: -50px;
+                                    left: auto;
+                                    right: 0;
+                                    margin: 0 auto !important;
+                                    top: auto;
+                                }
+                                &:hover {
+                                    background-color: #0aad0a !important;
+                                }
+                            }
+                            .slick-list {
+                                max-height: 300px;
+                                max-width: 400px;
+                                .slick-slide {
+                                    width: 400px!important;
+                                }
+                            }
+                            .slick-dots {
+                                display: block !important;
+                                bottom: -70px;
+                            }
+                        }
+                    }
+                }
+            }
+            //offer dialog
+            &.selected-offer {
+                max-width: 700px;
+                max-height: 100%;
+                .p-dialog-content {
+                    max-height: 550px;
+                    // padding-top: 0;
+                }
+                .p-dialog-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,567 @@
+.top-header {
+  padding: 5px 0 0;
+}
+
+.top-header .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header .d-md-block {
+  display: block !important;
+}
+
+.location-btn > .category-location {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 12px;
+}
+
+.location-btn > .category-location strong {
+  font-weight: 700;
+}
+
+.vestige-mainbanner {
+  /* margin-bottom: 60px; */
+}
+
+.business-opportunity {
+  padding: 60px 0;
+}
+
+.business-opportunity.opper {
+  background: url("/images/theme/vestige-bg-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  visibility: visible;
+  background-size: 330px auto;
+  background-position: right bottom;
+}
+
+.opportunity-content {
+  padding: 0 40px;
+}
+
+.business-opportunity p {
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.business-opportunity .btn.btn-light {
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.prodcut-banners {
+  padding: 60px 0;
+}
+
+.success-story > .slick-prev {
+  bottom: 0;
+  top: auto;
+}
+
+.clinicalSection {
+  padding: 100px 0 60px;
+  background-size: cover;
+  background-position: 44%;
+  text-align: center;
+}
+
+.success-stories {
+  padding: 60px 0;
+}
+
+.success-stories .card-body.text-center {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.clinicalSection h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.3;
+  font-size: 32px;
+}
+
+.clinicalList {
+  margin: 0 -10px;
+}
+
+.clinicalList .card-product {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+  color: white;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.clinicalList .card-product .card-body {
+  padding: 0;
+  flex: initial;
+  width: 100%;
+}
+
+.clinicalList .card-product .card-body .image-wrapper {
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 250px;
+}
+
+.clinicalList .card-product .card-body h3 a,
+.clinicalList .card-product .card-body h6 {
+  color: white;
+}
+
+.clinicalSection .slick-slider .slick-next,
+.success-stories .slick-slider .slick-next,
+.producthome .slick-slider .slick-next {
+  margin: 0 !important;
+  top: 50%;
+  bottom: auto;
+  right: -30px;
+  background: #fff;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  left: auto;
+  margin-top: -25px !important;
+}
+
+.clinicalSection .slick-slider .slick-prev,
+.success-stories .slick-slider .slick-prev,
+.producthome .slick-slider .slick-prev {
+  margin: 0 !important;
+  top: 50%;
+  bottom: auto;
+  left: -30px;
+  background: #fff;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px !important;
+}
+
+.clinicalSection .slick-slider .slick-disabled,
+.success-stories .slick-slider .slick-disabled,
+.producthome .slick-slider .slick-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.clinicalSection .slick-slider .slick-prev:before,
+.success-stories .slick-prev:before,
+.producthome .slick-slider .slick-prev:before {
+  content: "";
+  color: black;
+  font-family: FontAwesome;
+  content: "\f104";
+  /* display: block; */
+  opacity: 1;
+}
+
+.clinicalSection .slick-slider .slick-next:before,
+.success-stories .slick-next:before,
+.producthome .slick-slider .slick-next:before {
+  content: "";
+  color: black;
+  font-family: FontAwesome;
+  content: "\f105";
+  /* display: block; */
+  opacity: 1;
+}
+
+.success-stories .slick-slider .slick-prev,
+.producthome .slick-slider .slick-prev {
+  background-color: rgb(0, 91, 170);
+  left: -50px;
+}
+
+.success-stories .slick-slider .slick-next,
+.producthome .slick-slider .slick-next {
+  background-color: rgb(0, 91, 170);
+  right: -50px;
+}
+
+.success-stories .slick-prev:before,
+.success-stories .slick-next:before,
+.producthome .slick-slider .slick-prev:before,
+.producthome .slick-slider .slick-next:before {
+  color: white;
+}
+
+.producthome {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.producthome .title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.producthome .right-tabs .nav {
+  border-bottom: 0px;
+  margin-top: 0;
+  float: none;
+}
+
+.producthome .nav-tabs .nav-link {
+  color: #005bb2 !important;
+}
+
+.producthome .nav-tabs .nav-link.active {
+  background: #005bb2 !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.producthome h3 {
+  color: #005baa;
+}
+
+.producthome .slick-slide {
+  padding: 0 8px;
+}
+
+.producthome .image-wrapper {
+  display: flex;
+  height: 220px;
+  width: 100%;
+  justify-content: center;
+}
+
+.producthome .card-body .image-wrapper a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.producthome .card-body .image-wrapper a img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+}
+
+.producthome .fs-6 {
+  min-height: 34px;
+}
+
+.producthome .col-md-3 {
+  padding: 0px;
+}
+
+@media (max-width: 1380px) and (min-width: 1024px) {
+  .producthome .text-dark1 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vestige-mainbanner .carousel-caption h1 {
+    font-size: 26px;
+    line-height: 34px;
+    color: white;
+  }
+
+  .vestige-mainbanner .carousel-caption p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .top-bar-menu a {
+    font-size: 10px;
+    border-right: none;
+    padding-right: 10px;
+  }
+
+  .location-btn > .category-location {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 10px;
+  }
+
+  a.dropdown-toggle.selectValue.country {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+    font-size: 10px !important;
+  }
+
+  .producthome .text-dark1 {
+    min-height: 38px;
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-header .row {
+    justify-content: center;
+    position: relative;
+  }
+
+  .hide-top-bar-menu {
+    display: none;
+  }
+
+  a.nav-link.topnavnew-menu {
+    display: block;
+  }
+
+  .nav-rght.user-buttons {
+    flex-wrap: wrap;
+  }
+
+  .nav-rght.user-buttons .btn {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .location-btn {
+    background-color: #005baa;
+    color: white;
+    cursor: pointer;
+    font-weight: var(--fc-btn-font-weight);
+    padding: var(--fc-btn-padding-y) var(--fc-btn-padding-x);
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .top-header > .container {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .top-header {
+    padding: 0;
+  }
+
+  .location-btn > .category-location {
+    width: 100% !important;
+    justify-content: center;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+  .location-btn {
+    width: 100%;
+  }
+
+  .location-btn > .category-location {
+    width: 100% !important;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .footer-logo {
+    width: 200px;
+  }
+
+  .inner-logo {
+    width: 65%;
+  }
+
+  section.mb-lg-10.my-8.suces {
+    height: 45rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .vestige-mainbanner .carousel-caption {
+    left: 10%;
+    width: 60%;
+    align-items: flex-start;
+  }
+
+  .vestige-mainbanner .carousel-control-next,
+  .vestige-mainbanner .carousel-control-prev {
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .producthome .title-row {
+    flex-wrap: wrap;
+  }
+
+  .producthome .nav-tabs {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-logo {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 20px !important;
+  }
+
+  .footer-content {
+    margin: 0 auto !important;
+  }
+
+  .clinicalList .card.card-product {
+    width: 70%;
+  }
+
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .vestige-mainbanner .carousel-control-prev,
+  .vestige-mainbanner .carousel-control-next {
+    display: none;
+  }
+
+  .vestige-mainbanner .carousel-caption {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    right: 0;
+  }
+}
+
+/********** Award Section ***********/
+.award-section {
+  visibility: visible;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 20px;
+}
+
+.award-section h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.award-section .slick-slider .slick-next {
+  margin: 0 !important;
+  top: 50%;
+  bottom: auto;
+  right: -30px;
+  background: #ddb96b;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  left: auto;
+  margin-top: -25px !important;
+}
+
+.award-section .slick-slider .slick-prev {
+  margin: 0 !important;
+  top: 50%;
+  bottom: auto;
+  left: -30px;
+  background: #ddb96b;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px !important;
+}
+
+.award-section .slick-slider .slick-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.award-section .slick-slider .slick-prev:before {
+  content: "";
+  color: black;
+  font-family: FontAwesome;
+  content: "\f104";
+  /* display: block; */
+}
+
+.award-section .slick-slider .slick-next:before {
+  content: "";
+  color: black;
+  font-family: FontAwesome;
+  content: "\f105";
+  /* display: block; */
+}
+
+@media (max-width: 767px) {
+  .vestige-mainbanner {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .business-opportunity.opper {
+    padding: 40px 0;
+    background: none;
+  }
+
+  .opportunity-content {
+    padding: 30px 0px 0;
+  }
+
+  .prodcut-banners {
+    padding: 40px 0;
+  }
+
+  .producthome {
+    padding: 40px 0;
+  }
+
+  .award-section .slick-slider .slick-next {
+    right: -10px;
+  }
+
+  .award-section .slick-slider .slick-prev {
+    left: -10px;
+  }
+
+  .clinicalSection {
+    padding: 60px 0;
+  }
+
+  .success-stories {
+    padding: 40px 0;
+  }
+
+  .clinicalSection .slick-slider .slick-next,
+  .success-stories .slick-slider .slick-next {
+    right: 0px;
+  }
+
+  .clinicalSection .slick-slider .slick-prev,
+  .success-stories .slick-slider .slick-prev {
+    left: 0px;
+  }
+}

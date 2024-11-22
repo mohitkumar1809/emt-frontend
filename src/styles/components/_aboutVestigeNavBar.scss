@@ -1,0 +1,401 @@
+.banner-wrapper{
+    margin-bottom: 10px;
+    &.mobile {
+       display: none;
+    }
+}
+.vestigenews-banner {
+    position: relative;
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: calc(1.34375rem + 1.125vw);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.vestigeabt-icon {
+    width: 100%;
+    margin: 0 auto;
+    background: $fc-white;
+    .col-3 {
+        padding: 0;
+        background: $fc-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            background: #ccc;
+            a {
+                color: $fc-white;
+            }
+        }
+        &.active {
+            background: $fc-heading-color;
+            a {
+                color: $fc-white;
+                .inner-box { 
+                    background: transparent;
+                    p {
+                        color: $fc-white;
+                    }
+                }
+            }
+        }
+        a {
+            cursor: pointer;
+            color: $fc-heading-color;
+            width: 100%;
+            .inner-box {
+                padding: 20px 25px;
+                width: 100%;
+                text-align: center;
+                background: transparent;
+                img {
+                    width: 30px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+.vestigeabt-area {
+    position: relative;
+    padding: 40px 0 0;
+    p {
+        font-size: 16px;
+        color: #000;
+        line-height: 26px;
+    }
+    .manage-heading {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 800px;
+    }
+    h1 {
+        color: #005baa;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .d-flex {
+        margin: 0 -15px;
+        flex-wrap: wrap;
+    }
+}
+
+.cart.text-decoration-none {
+    padding: 0 15px;
+    cursor: default;
+    .card {
+        border: none;
+        box-shadow: 0px 0px 6px 0px #ccc;
+        .card-body {
+            padding: 0.5rem;
+            img {
+                width: 100%;
+                height: 375px;
+                object-fit: cover;
+                object-position: top;
+            }
+            h2 {
+                color: $fc-heading-color;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            p {
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: #222;
+            }
+            .text-truncate {
+                text-align: left;
+                color: #000;
+                background: transparent;
+                white-space: unset;
+                height: 3rem;
+                line-height: 1.6;
+                padding-top: 0px;
+            }
+            .read-more {
+                display: flex;
+                justify-content: flex-end;
+                line-height: 1.6;
+                a {
+                    color: $fc-heading-color;
+                }
+                span {
+                    color: $fc-heading-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.vestigeabt-mission {
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    padding: 40px 60px;
+    h2 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: left;
+    }
+    p {
+        color: #fff;
+        font-size: 16px;
+        text-align: left;
+        line-height: 26px;
+    }
+    img {
+        width: 75px;
+        margin-top: 65px;
+    }
+    .mission-container {
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px;
+        min-height: 295px;
+    }
+}
+
+.mgmt-modal {
+    .p-dialog-content {
+        font-size: 1rem;
+    }
+    .p-dialog-footer {
+        .btn.btn-primary {
+            width: 100px;
+        }
+    }
+}
+
+.marketing-planarea {
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+    .marketing-inner {
+        padding: 45px;
+        border-radius: 8px;
+        margin-top: 40px;
+    }    
+}
+
+.way-planarea {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    
+    .way-inner {
+        padding: 40px 40px 0 40px;
+        border-radius: 8px;
+        text-align: center;
+        h1 {
+            color: #005baa;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .col-md-3 {
+            border-right: 1.5px solid #fff;
+            margin-bottom: 50px;
+            h2 {
+                color: #005baa;
+                font-size: 45px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.enter-planarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    h1 {
+        color: #005baa;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .enterinner-box {
+        text-align: center;
+        border: 5px solid #189a49;
+        border-radius: 8px;
+        padding: 20px;
+        min-height: 195px;
+        img {
+            width: 60px;
+            margin-bottom: 30px;
+            height: 60px;
+        }
+        h2 {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .banner-wrapper {
+        display: none;
+    }
+    .banner-wrapper.mobile {
+        display: block;
+        .vestigenews-banner {
+            display: block !important;
+        }
+    }
+    .vestigeabt-icon {
+        .col-3 {
+            width: 50%;
+            padding: 0;
+            a {
+                .inner-box { 
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .vestigeabt-area {
+        .col-md-12 {
+            p {
+                &:first-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+        .my-auto {
+            padding-top: 20px;
+        }
+    }
+    .vestigeabt-mission { 
+        .col-md-6 {
+            &:first-child {
+                margin-bottom: 15px;
+            }
+            .mission-container {
+                min-height: 300px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .enterinner-box {
+        margin-bottom: 15px !important;
+        min-height: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .vestigeabt-mission {
+        width: 100% !important;
+    }
+    .vestigeabt-area {
+        .col-md-12 {
+            p {
+                &:first-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+        .my-auto {
+            padding-top: 20px;
+        }
+    }
+    .enterinner-box {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+    .vestigeabt-area {
+        .d-flex {
+            .text-decoration-none {
+                width: 33.33%;
+                .card { 
+                    img {
+                        height: 250px!important;
+                    }
+                }
+            }   
+        }
+    }
+    .way-planarea .way-inner .col-md-3 {
+        width: 33.33%;
+    }
+}
+
+@media(max-width:767px) {
+    .vestigeabt-area{
+        padding: 40px 0px 0px;
+        .d-flex {
+            flex-wrap: wrap;
+            .text-decoration-none {
+                width: 100%;
+                margin-bottom: 20px;
+                .card {
+                    &.card-product.mb-lg-4 {
+                        padding: 0;
+                        border: 0;
+                        .card-body {
+                            text-align: center;
+                            .text-truncate {
+                                height: auto;
+                                font-size: 16px;
+                                line-height: 26px;
+                                text-align: center;
+                            }
+                            .read-more {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .way-planarea .way-inner .col-md-3 {
+        border-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}

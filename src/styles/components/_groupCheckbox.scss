@@ -1,0 +1,53 @@
+.group_checkbox_wrapper {
+    .checkbox {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        .custom-checkbox {
+            appearance: none;
+            width: 1em;
+            height: 1em;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.1s ease-in-out;
+
+            &:checked {
+                background-color: #4caf50;
+                border-color: #4caf50;
+                outline: none;
+                position: relative;
+                &:hover {
+                    background-color: #4caf50;
+                    border-color: #4caf50;
+                }
+                &::before {
+                    content: "✔";
+                    color: white;
+                    font-size: 9px;
+                    position: absolute;
+                    top: 0px;
+                }
+            }
+
+            &:hover {
+                background-color: #e0e0e0;
+                border-color: #4caf50;
+            }
+
+            &:not(:checked) {
+                background-color: white;
+            }
+        }
+
+        .label {
+            text-align: center;
+            width: 50%;
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+    }
+}

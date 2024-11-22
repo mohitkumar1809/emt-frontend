@@ -1,0 +1,58 @@
+.input-form.p-calendar {
+    padding: 0;
+    .p-inputtext {
+        width: 100%;
+        border: 0;
+        padding: 5px;
+        font-size: 0.875rem;
+        font-weight: 500;    
+        outline: none;
+        &::placeholder {
+            color: #bdbdbd;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $fc-primary;
+        }
+    }
+}
+
+.p-datepicker {
+    .p-datepicker-group-container {
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        .p-datepicker-header {
+            margin-bottom: 10px;
+            .p-datepicker-title {
+                .p-link {
+                    font-weight: 600;
+                }
+                .p-datepicker-year {
+                    margin-left: 10px;
+                }
+            }
+            > button {
+                border: none;
+                background: none;
+            }
+        }
+        .p-datepicker-calendar-container {
+            font-size: 0.875rem;
+            tbody {
+                font-weight: 500;
+                > tr {
+                    > td {
+                        span {
+                            &:hover {
+                                background: $fc-blue;
+                                color: $fc-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

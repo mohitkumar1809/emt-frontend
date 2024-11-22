@@ -1,0 +1,35 @@
+/* Add these styles to your existing CSS file or create a new one */
+
+.achivertab-area {
+    /* Add any existing styles for the achivertab-area section */
+  }
+  
+  .achivertab li {
+    list-style: none;
+  }
+  
+  .director-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .director-info {
+    text-align: center;
+  }
+  
+  .director-info img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .director-info p {
+    font-weight: bold;
+    margin: 0;
+  }
+  

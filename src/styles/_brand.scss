@@ -1,0 +1,160 @@
+.brands-page {
+    .brand-banner {
+        position: relative;
+        width: 100%;
+    }
+    .n-column-image-grid {
+        padding: 100px 0 0;
+        background-size: cover;
+        background-position: center;
+        .section_title {
+            color: #000000;
+            max-width: 800px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .grid-item-row {
+            margin: 0 -7.5px -50px;
+            margin-top: 100px;
+            .slick-list {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+                .grid-item {
+                    padding: 0 15px;
+                    .grid-image {
+                        position: relative;
+                        cursor: pointer;
+                        .overlay-content {
+                            opacity: 0;
+                            position: absolute;
+                            bottom: 0;
+                            height: 0;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #00000082;
+                            color: white;
+                            transition: all 0.3s ease-in-out;
+                            width: 100%;
+                            h3 {
+                                color: white;
+                                text-align: center;
+                            }
+                            span {
+                                background-color: #1ab355;
+                                padding: 8px 20px;
+                                display: inline-block;
+                                color: white;
+                                border-radius: 8px;
+                                font-size: 14px;
+                            }
+                        }
+                        &:hover .overlay-content {
+                            opacity: 1;
+                            height: 100%;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .image-with-text-grid {
+        padding: 140px 0 90px;
+        background-color: white;
+        .row {
+            align-items: center;
+          }
+          .text-section {
+            padding: 60px 20px 60px 0;
+            position: relative;
+            &:before {
+                content: "";
+                background-color: #f9dbc8;
+                position: absolute;
+                height: 100%;
+                width: 1000px;
+                right: 0;
+                z-index: 1;
+                top: 0;
+                bottom: 0;
+              }
+              &:after {
+                content: "";
+                background-color: #f9dbc8;
+                position: absolute;
+                height: 100%;
+                width: 100px;
+                left: 100%;
+                z-index: 1;
+                top: 0;
+                bottom: 0;
+                border-radius: 0 8px 8px 0;
+              }
+              a {
+                color: #d8a17e;
+                &:hover {
+                    text-decoration: underline;
+                  }
+              }
+              img {
+                border-radius: 8px;
+              }
+              
+          }
+          .text-section-inner {
+            position: relative;
+            z-index: 1;
+            p {
+                font-size: 16px;
+                line-height: 26px;
+              }
+          }
+          .text-section-inner h2, .text-section-inner p {
+            color: #000000;
+          }
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) { 
+    .brands-page {
+        .n-column-image-grid {
+            padding: 60px 0 0;
+        }
+        .image-with-text-grid {
+            padding: 100px 0 60px;
+            .text-section {
+                padding: 30px 10px 30px 0;
+                &:after {
+                    width: 60px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .brands-page {
+        .n-column-image-grid {
+            padding: 40px 0 0;
+        }
+        .image-with-text-grid {
+            padding: 80px 0 40px;
+            .container {
+                padding: 0;
+            }
+            .text-section {
+                padding: 40px;
+                margin-bottom: 10px;
+                &::before,&::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,264 @@
+.vestigenews-area.media-news-wrapper {
+    padding-top: 20px;
+}
+
+.media-vestige .card-body h2 {
+    color: #222;
+}
+
+.media-vestige .slick-slide.slick-active {
+    border: 1px solid;
+}
+
+.media-news-wrapper {
+    margin-bottom: 60px;
+    .container {
+        > h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-top: 2rem;
+            font-size: calc(1.3rem + 0.6vw);
+            font-weight: 600;
+            color: #005BAA;
+            text-transform: capitalize;
+        }
+        .vestige-value-para {
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                color: #000000;
+            }
+            h3 {
+                font-size: 20px;
+                color: #005BAA;
+            }
+        }
+        iframe {
+            width: 100%;
+            margin-top: 30px;
+            height: 350px;
+        }
+        .paragraph {
+            line-height: 26px;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #000;
+        }
+        img {
+            margin: 0 auto;
+            display: flex;
+        }
+        .dropdown {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        //for cards
+        .mediacoverage-box {
+            .cart.text-decoration-none {
+                margin-bottom: 20px;
+                .card {
+                    .card-body {
+                        h2 {
+                            max-height: 3rem;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        //for slider
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    > div {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .slider-content {
+                        .card-body {
+                            background: #fbfcfb;
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                            h2 {
+                                font-size: 1.5rem;
+                                margin-bottom: 1rem;
+                                text-align: left;
+                            }
+                            .card-description {
+                                color: #222;
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                margin: 20px 0;
+                            }
+                            .read-more {
+                                padding: 20px 0;
+                                > a {
+                                    padding: 8px 32px;
+                                    text-align: center;
+                                    color: #fff;
+                                    background: #005BAA;
+                                    border-radius: 5px;
+                                }
+                                > span {
+                                    padding: 8px 32px;
+                                    text-align: center;
+                                    color: #fff;
+                                    background: #005BAA;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slick-arrow {
+            display: none !important;
+        }
+        .slick-dots {
+            display: block !important;
+        }
+    }
+}
+
+.media-content {
+    background: #f1f1f1;
+    margin: 0;
+}
+
+@media screen and (max-width: 490px) {
+    .vestigenews-area.media-news-wrapper {
+        padding-top: 0px;
+    }
+    .vestigeInMedia {
+        .breadcrumbs {
+            .container {
+                max-width: 85%;
+                margin: 0;
+                margin-left: 2rem;
+                padding: 0;
+            }
+        }
+        .media-news-wrapper { 
+            .container { 
+                .tab-content {
+                    .tab-pane {
+                        .slick-slider {
+                            width: 240px;
+                        }
+                    }
+                }
+
+                .slick-list { 
+                    .slick-track {
+                        .slick-slide {
+                            .slider-content {
+                                width: 90% !important;
+                                .card-body {
+                                    padding: 1rem;
+                                    img {
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                    h2 {
+                                        font-size: 0.875rem;
+                                        margin-top: 0.5rem;
+                                        margin-bottom: 0.5rem;
+                                    }
+                                    p { 
+                                        font-size: 0.5rem;
+                                    }
+                                    .card-description {
+                                        font-size: 0.675rem;
+                                        margin: 0;
+                                        max-height: 3rem;
+                                        overflow: hidden;
+                                    }
+                                    .read-more {
+                                        padding: 0.5rem 0;
+                                        margin-top: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .vestigenews-area.media-news-wrapper {
+        padding-top: 0px;
+    }
+    .vestigeInMedia {
+        .breadcrumbs {
+            .container {
+                max-width: 85%;
+                margin: 0;
+                margin-left: 2rem;
+                padding: 0;
+            }
+        }
+        .media-news-wrapper { 
+            .container {
+                .slick-list { 
+                    .slick-track {
+                        .slick-slide {
+                            .slider-content {
+                                width: 90% !important;
+                                .card-body {
+                                    padding: 1rem;
+                                    img {
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                    h2 {
+                                        font-size: 0.875rem;
+                                        margin-top: 0.5rem;
+                                        margin-bottom: 0.5rem;
+                                    }
+                                    p { 
+                                        font-size: 0.5rem;
+                                    }
+                                    .card-description {
+                                        font-size: 0.675rem;
+                                        margin: 0;
+                                        max-height: 3rem;
+                                        overflow: hidden;
+                                    }
+                                    .read-more {
+                                        padding: 0.5rem 0;
+                                        margin-top: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .media-news-wrapper {
+        .container {
+            //for cards
+            .mediacoverage-box {
+                .cart.text-decoration-none {
+                    .card {
+                        img {
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

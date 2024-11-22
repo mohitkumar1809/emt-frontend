@@ -1,0 +1,150 @@
+.download-area {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+
+.download-area .downloadPage {
+    background: white;
+}
+
+.download-area .downloadPage h2 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+.download-area .catlogContainer .item {
+    float: left;
+    width: 25%;
+    margin: 0 0 20px 0;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.download-area .catlogContainer .catItem {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.download-area .catlogContainer .catItem span {
+    display: block;
+    width: 100%;
+    margin: 0 0 15px;
+    box-shadow: 0 0 4px #d1d1d1;
+    background: #fff;
+    overflow: hidden;
+}
+
+.download-area .catlogContainer .catItem img {
+    max-width: 100%;
+    display: block;
+    border: none;
+    min-height: 275px;
+    margin: 0 auto;
+}
+
+.download-area .catlogContainer .catItem .btn {
+    background: #1062ac;
+    color: #fff;
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+
+.download-area .catlogContainer .catItem .catDetail p {
+    color: #000;
+    margin-bottom: 0;
+}
+
+.download-area .catlogContainer .catItem .catDetail {
+    text-align: left;
+    margin: 0 0 15px;
+    min-height: 155px;
+}
+
+.download-area label {
+    margin-right: 10px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0;
+    width: 105px;
+    text-align: left;
+}
+
+.download-area .legalPage {
+    background: #fff;
+    width: 100%;
+}
+
+
+.download-area .privacypolicyWrap {
+    padding: 40px;
+}
+
+.download-area .tblWrapper table thead th {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 10px !important;
+    text-align: left;
+}
+
+.download-area .tblWrapper table thead th,
+.tblWrapper table tr td {
+    padding: 25px 20px;
+    color: #444;
+    text-transform: uppercase;
+    border: 1px solid #e1e5de;
+}
+
+.download-area .container {
+    padding: 0px;
+}
+
+@media(max-width:1024px) and (min-width:992px) {
+    .catlogContainer {
+        padding: 20px;
+    }
+
+    .download-area .catlogContainer .item {
+        width: 33.33%;
+        margin: 0 0 20px 0;
+    }
+
+}
+
+@media(max-width:991px) and (min-width:768px) {
+    .catlogContainer {
+        padding: 20px;
+    }
+
+    .download-area .catlogContainer .item {
+        width: 50%;
+        margin: 0 0 20px 0;
+    }
+
+}
+
+@media(max-width:767px) {
+    .catlogContainer {
+        padding: 20px;
+    }
+
+    .download-area .catlogContainer .item {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .download-area .catlogContainer .catItem .catDetail {
+        min-height: inherit;
+    }
+
+}

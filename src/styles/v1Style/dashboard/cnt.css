@@ -1,0 +1,96 @@
+.cnt-training {
+    background: white;
+    padding: 60px 0;
+}
+.cnt-training .topSec{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cnt-training .note {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: red;
+}
+.cnt-training .note p{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.cnt-training .note ol{
+  list-style: auto;
+  margin-bottom: 0;
+}
+.cnt-training .note li{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.cnt-training .note li:last-child{
+    margin-bottom: 0;
+}
+.eligible{
+    background: red;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600; 
+}
+.eligible p{
+    margin-bottom: 0;
+}
+
+.form-wrapper{
+    border: 1px solid #ddd;
+    padding: 0 16px 24px;
+    border-radius: 5px;
+}
+.cnt-training .form-section-title {
+    background: #f3f3f3;
+    padding: 10px 16px;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 -20px 24px;
+}
+
+.cnt-training .nav-tabs {
+    border-bottom: 1px solid  rgb(223, 226, 225);
+    margin-bottom: 40px;
+}
+.cnt-training  .nav-tabs .nav-item {
+    margin-right: 10px;
+}
+.cnt-training  .nav-tabs .nav-item:last-child {
+    margin-right: 0px;
+}
+.cnt-training .nav-tabs .nav-item .nav-link{
+    text-transform: capitalize;
+    margin-bottom: 0;
+    padding: 10px 30px;
+    border: 0;
+}
+.cnt-training .nav-tabs .nav-item .nav-link.active,
+.cnt-training .nav-tabs .nav-item .nav-link:hover{
+    background-color: white;
+    border-bottom: 2px solid #005BAA;
+}
+
+
+.daf-upload {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.daf-type .form-contorl{
+    flex-direction: row;
+}
+.daf-type .form-contorl label{
+    margin-right: 15px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.daf-type .form-contorl input[type="radio"]{
+    margin-right: 5px;
+}

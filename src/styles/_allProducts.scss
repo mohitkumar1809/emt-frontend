@@ -1,0 +1,219 @@
+.all-product-wrapper {
+    padding: 0px 0 30px 0;
+    .btn.btn-green {
+        width: 100%;
+        justify-content: center;
+    }
+    .product-listing {
+        margin-bottom: 1.25rem !important;
+    }
+    .category-Header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        .category-text {
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .input-group {
+            width: 200px;
+            margin-bottom: 0;
+        }
+    }
+    .card.card-product {
+        background-color: $fc-white;
+        border: none;
+        .card-body {
+            padding: 0.5rem;
+            .image-wrapper {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+                height: 220px;
+                width: 100%;
+                .pv-text {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 2;
+                    span {
+                        padding: 5px;
+                        background-color: #0aad0a;
+                        color: white;
+                        border-radius: 10px;
+                        width: 70px;
+                        font-size: 10px;
+                        margin-bottom: 0;
+                    }
+                }
+                .variants {
+                    position: absolute;
+                    z-index: 9;
+                    left: 0;
+                    top: 0;
+                    background: #005baa;
+                    font-size: 10px;
+                    color: #fff;
+                    font-weight: 600;
+                    width: 100px;
+                    line-height: 1.1;
+                    padding: 5px;
+                    border-radius: 10px;
+                    small {
+                        font-size: 10px;
+                    }
+                }
+                a {
+                    height: 100%;
+                    width: 100%;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-bottom: 0.875rem !important;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                .out-of-stock-label {
+                    z-index: 2;
+                    position: absolute;
+                    top: 50%;
+                    font-size: 14px;
+                    transform: translateY(-50%);
+                    font-weight: bold;
+                    background: #ff0000b5;
+                    color: black;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    width: 50%;
+                }
+            }
+            .card-content {
+                font-size: 0.875rem;
+                small {
+                    font-weight: 500;
+                    line-height: 1.6;
+                    color: $fc-gray;
+                    &:hover {
+                        color: $fc-heading-color;
+                    }
+                }
+                h2 {
+                    font-size: 0.875rem;
+                    a {
+                        color: $fc-gray;
+                        line-height: 1.6;
+                        font-weight: 600;
+                        &:hover {
+                            color: $fc-link-hover-color
+                        }
+                    }
+                }
+                h6 {
+                    font-size: 0.875rem;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    color: $fc-heading-color;
+                    .dropdown-title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .form-group.input-group {
+                        width: 50%;
+                        margin: 0;
+                    }
+                }
+                .btn-wrapper {
+                    align-items: center;
+                    width: 100%;
+                    border-top: 1px solid #ecf0ef;
+                    padding: 1px;
+                    height: 40px;
+                    cursor: pointer;
+                    .btn.btn-light {
+                        text-align: center;
+                        line-height: 28px;
+                        font-size: 0.875rem;
+                        padding: 12px 15px;
+                    }
+                    .hover-btn {
+                        display: flex;
+                        height: 45px;
+                        align-items: center;
+                        overflow: hidden;
+                        background: #005baa;
+                        width: 96%;
+                        justify-content: space-around;
+                        position: absolute;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateY(-100%);
+                        transition: all 0.3s ease 0s;
+                        > i {
+                            color: $fc-white;
+                            height: 45px;
+                            width: 65px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover {
+                                background-color: #1ab355;
+                            }
+                        }
+                        .btn.btn-light {
+                            width: 100%;
+                            justify-content: center;
+                            i {
+                                color: $fc-white;
+                                margin-right: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            .hover-btn {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: translateY(0) !important;
+            }
+        }
+    }
+
+    // filter css
+    .accordion-content {
+        .radio-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .radio-item {
+                padding: 10px 0px;
+                margin: 0;
+                label {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    line-height: 1.6;
+                    input {
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+        &.show {
+            display: block;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+}

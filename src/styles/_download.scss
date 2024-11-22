@@ -1,0 +1,75 @@
+.download-nav {
+    .col-3 {
+        width: 50%;
+    }
+}
+
+.download-card {
+    .card-body {
+        .text-truncate {
+            min-height: 100px;
+        }
+        .dropdown-select {
+            justify-content: space-between;
+            label {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+        .dropdown-option {
+            max-width: 180px;
+        }
+    }
+}
+
+.download-area {
+    padding: 40px 40px 0px 40px;
+    background: #f1f8ff;
+    .download-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .cart-item {
+            width: 25%;
+            padding: 0 15px;
+            margin-bottom: 20px;
+            img {
+                min-height: 275px;
+                box-shadow: 0 0 4px #d1d1d1;
+            }
+            .cart-detail {
+                min-height: 155px;
+                h3 {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 10px 0;
+                    font-weight: 600;
+                    color: $fc-heading-color;
+                }
+                p {
+                    line-height: 1.6;
+                }
+            }
+            .input-group {
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    font-weight: 600;
+                    color: black;
+                }
+                .dropdown-option {
+                    max-width: 115px;
+                }
+            }
+            a {
+                background: #1062ac;
+                color: #fff;
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+    }
+}

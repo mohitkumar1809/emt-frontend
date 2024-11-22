@@ -1,0 +1,24 @@
+.breadcrumb-item{
+    a {
+        color: #005BAA;
+    }
+    &.active {
+        color:#889397;
+        padding-left: 10px;
+        text-transform: capitalize;
+        &::before {
+            color:#dfe2e1;
+            padding-right: 1rem;
+            float: left;
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    color:#889397;
+    &::before {
+        color:#dfe2e1;
+        padding-right: 1rem;
+        float: left;
+    }
+}

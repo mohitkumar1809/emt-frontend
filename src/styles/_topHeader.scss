@@ -1,0 +1,153 @@
+.top-header {
+    padding: 5px 0 0;
+    .top-bar-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .title {
+            font-size: 0.675rem;
+            padding: 0 15px 0 0px;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                color: #005baa;
+            }
+        }
+        .dropdown {
+            background: rgba(0, 0, 0, 0.50);
+            padding: 5px 10px;
+            position: relative !important;
+            margin-right: 15px;
+            border-radius: 5px;
+            .header-user {
+                margin: 0;
+                .dropdown-title {
+                    font-size: 10px;
+                    color: #fff;
+                }
+                i {
+                    color: #fff;
+                    font-size: 10px;
+                }
+            }
+            .dropdown-menu {
+                top: 100%;
+                left: 0;
+                padding: 0.35rem 0;
+                margin-top: 3px;
+                .item {
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
+            }
+        }
+            .skiptranslate.goog-te-gadget {
+                .goog-te-gadget-simple {
+                    white-space: nowrap;
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 5px 10px;
+                    position: relative !important;
+                    margin-right: 15px;
+                    border-radius: 5px;
+                    > img {
+                        display: none;
+                    }
+                    > span {
+                        display: flex;
+                        > a {
+                            > span {
+                                color: #fff !important;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+    .row {
+        justify-content: space-between;
+        .loaction-wrapper {
+            cursor: pointer;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            .location-btn {
+                width: fit-content;
+                .category-location {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                    justify-content: flex-end;
+                    width: 100%;
+                    font-size: 12px;
+                    i{
+                        margin-left: 5px;
+                    }
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(max-width:1200px) and (min-width:992px) {
+        .top-bar-menu .title {
+            border-right: none;
+            padding-right: 10px;
+        }
+        .location-btn {
+            .category-location {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .main_container {
+        > .top-header {
+            padding: 0;
+            .container {
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                .loaction-wrapper {
+                    width: 100%;
+                    background: $fc-heading-color;
+                    color: #fff;
+                    justify-content: center;
+                    .category-location {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+            .hide-top-bar-menu {
+                display: none;
+            }
+        }
+    }
+    .top-header {
+        .location-btn {
+            .category-location {
+                justify-content: center;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+    .top-header {
+        .location-btn {
+            .category-location {
+                justify-content: center;
+                padding: 10px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.cnt-training {
+    background: white;
+    padding: 60px 0;
+    .topSec{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .note {
+        background: #f3f3f3;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        color: red;
+        p{
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        ol{
+          list-style: auto;
+          margin-bottom: 0;
+        }
+        li{
+            font-weight: 600;
+            margin-bottom: 5px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .form-section-title {
+        background: #f3f3f3;
+        padding: 10px 16px;
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0 -20px 24px;
+    }
+    
+    .nav-tabs {
+        border-bottom: 1px solid  rgb(223, 226, 225);
+        margin-bottom: 40px;
+        .nav-item {
+            margin-right: 10px;
+        }
+    }
+     .nav-tabs .nav-item {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        .nav-link{
+            text-transform: capitalize;
+            margin-bottom: 0;
+            padding: 10px 30px;
+            border: 0;
+            &.active, &:hover {
+                background-color: white;
+                border-bottom: 2px solid #005BAA;
+            }
+        }
+    }
+}
+.eligible{
+    background: red;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600; 
+    p{
+        margin-bottom: 0;
+    }
+}
+
+.form-wrapper{
+    border: 1px solid #ddd;
+    padding: 0 16px 24px;
+    border-radius: 5px;
+}
+
+
+.daf-upload {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.daf-type {
+    .form-contorl{
+        flex-direction: row;
+        label{
+            margin-right: 15px;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        input[type="radio"]{
+            margin-right: 5px;
+        }
+    }
+}

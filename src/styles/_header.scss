@@ -1,0 +1,226 @@
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fbfcfb;
+    .loaction-wrapper {
+        display: none;
+        cursor: pointer;
+        .location-btn {
+            background-color: $fc-heading-color;
+            color: $fc-white;
+            font-weight: 600;
+            font-size: 0.875rem;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            .category-location {
+                display: flex;
+                align-items: center;
+                i {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    //Middle Header
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .footer-logo {
+            cursor: pointer;
+        }
+        .dropdown-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            > a {
+                color: $fc-gray !important;
+            }
+            .header-icons {
+                justify-content: space-around;
+                align-items: center;
+                width: 80px;
+                display: flex;
+                margin-right: 16px;
+            }
+            i {
+                font-size: 16px;
+            }
+            > button {
+                margin-left: 16px;
+                > i {
+                    &::before {
+                        font-size: 1.5rem;
+                        color: $fc-blue;
+                    }
+                }
+            }
+            .text-muted {
+                display: flex;
+                align-items: center;
+                color: $fc-gray !important;
+                &:hover {
+                    color: $fc-heading-color !important;
+                }
+            }
+        }
+
+        // .searchbar-wrapper {
+        //     width: 360px;
+        // }
+    }
+
+    //Bottom Header
+    .side-bar {
+        //bottom menu
+        .offcanvas-start {
+            width: 560px !important;
+            border: none;
+            .offcanvas-body {
+                justify-content: space-between;
+                align-items: center;
+                .menu {
+                    display: flex;
+                    .dropdown.menu-overflow {
+                        .dropdown-menu {
+                            max-height: 400px;
+                            overflow-y: auto;
+                            .item {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                    .top-header {
+                        display: none;
+                    }
+                }
+                
+                .side-bar-button {
+                    display: flex;
+                    .btn-light:first-child {
+                        margin-right: 10px;
+                    }
+                    .btn-light {
+                        width: fit-content;
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        //side panel
+        .offcanvas-start.showing,
+        .offcanvas-start.show {
+            .offcanvas-body {
+                .menu {
+                    display: block;
+        
+                    .dropdown {
+                        margin-bottom: 10px;
+                        // For icon in side panel
+                        position: relative !important;
+        
+                        .header-user {
+                            width: 100%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            > i {
+                                position: absolute;
+                                right: 0;
+                            }
+        
+                            .dropdown-title {
+                                border-bottom: 1px solid #ecf0ef;
+                                width: 100%;
+                                margin-bottom: 2px;
+                            }
+                        }
+        
+                        .dropdown-menu {
+                            box-shadow: none !important;
+                            border: 1px solid #ecf0ef;
+                            width: 100%;
+                            position: relative;
+        
+                            &#dropdownUserSchedule {
+                                max-height: fit-content;
+                            }
+                        }
+        
+                        &:last-child {
+                            .header-user {
+                                border-bottom: 1px solid #ecf0ef;
+                            }
+                        }
+                    }
+        
+                    // Top header added in side panel
+                    .top-header {
+                        display: block;
+        
+                        .container {
+                            padding: 0;
+        
+                            .top-bar-menu {
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                .title {
+                                    color: #001e2b;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                    border-bottom: 1px solid #ecf0ef;
+                                    width: 100%;
+                                    margin-bottom: 12px;
+                                }
+        
+                                .dropdown {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .category-location {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+
+    a.visitweb.btn.btn-success {
+        margin-left: 0px;
+        position: fixed;
+        right: 0px;
+        top: 50%;
+        line-height: 20px;
+        padding: 5px;
+        border-radius: 14px 0px 0px 14px !important;
+        z-index: 9;
+        margin-top: -26px;
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        a.visitweb.btn.btn-success{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .header-wrapper {
+            .dropdown-wrapper {
+                .header-icons {
+                    width: fit-content;
+                }
+            }
+        }
+        // .loaction-wrapper {
+        //     display: flex;
+        // }
+    }
+}
