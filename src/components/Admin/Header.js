@@ -1,7 +1,7 @@
-import { logoutUser } from "@/redux/actions/userAction";
-import { useRouter } from "next/navigation";
 import React from "react";
+import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from "@/redux/actions/userAction";
 
 const Header = ({ title }) => {
   const router = useRouter();

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import MainComponent from "../Admin/MainHeader";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
+import MainComponent from "../../components/Admin/MainHeader";
 
 const breadcrumbItems = [
   { label: "Dashboard", href: "/dashboard", active: false },

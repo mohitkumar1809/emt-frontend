@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { usePathname } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
 import { activeSubMenuData } from "@/utils/activeSubMenu";
 import { setActiveSideNavMenu } from "@/redux/actions/activeSideNavMenuAction";
 

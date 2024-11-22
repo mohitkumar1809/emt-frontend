@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import MainComponent from "../Admin/MainHeader";
+import { useRouter } from "next/navigation";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
-import { useRouter } from "next/navigation";
+import MainComponent from "../../components/Admin/MainHeader";
 
 const breadcrumbItems = [{ label: "Dashboard", href: "", active: true }];
 
