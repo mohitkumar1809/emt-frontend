@@ -1,17 +1,16 @@
 "use client";
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import InfoCard from "@/components/InfoCard";
 import Breadcrumb from "@/components/BreadCrumb";
 import withFixedChildren from "@/hoc/WithAdminPanelUI";
 import MainComponent from "../../components/MainHeader";
 
 const breadcrumbItems = [
   { label: "Dashboard", href: "/dashboard", active: false },
-  { label: "Call Summary", href: "", active: true },
+  { label: "Create User", href: "", active: true },
 ];
 
-const CallSummary = () => {
+const CreateUser = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -24,9 +23,8 @@ const CallSummary = () => {
   return (
     <>
       <Breadcrumb items={breadcrumbItems} />
-      <InfoCard type="doughnut" keyName="Call Summary" />
     </>
   );
 };
 
-export default withFixedChildren(MainComponent, CallSummary);
+export default withFixedChildren(MainComponent, CreateUser);
