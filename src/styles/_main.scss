@@ -62,3 +62,13 @@ body {
   font-weight: 500;
   line-height: 1.6;
 }
+
+.admin-wrapper {
+  .wrapper {
+    .layout {
+      overflow-y: scroll;
+    height: auto;
+    max-height: calc(100vh - 146px);
+    }
+  }
+}
