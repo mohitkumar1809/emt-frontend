@@ -142,7 +142,7 @@ const InfoCard = ({ keyName }) => {
                   <h3 style={{ fontSize: "12px" }}>{i?.name}</h3>
                 </div>
                 <div className="survey-chart">
-                  {index > 2 ? (
+                  {index > 1 ? (
                     <div
                       className="h-100 w-100"
                       style={{ display: "flex", justifyContent: "center" }}
