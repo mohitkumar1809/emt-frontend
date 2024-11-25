@@ -27,6 +27,7 @@ ChartJS.register(
 
 const doughnutOptions = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     tooltip: {
       displayColors: false,
@@ -129,17 +130,23 @@ const InfoCard = ({ keyName, type }) => {
 
   return (
     <>
-      <div className="row mt-12">
+      <div className="row">
         {keyDetails?.map((i, index) => {
           return (
             <div className="col-md-6" key={index}>
-              <div className="dashboard-cards">
+              <div
+                className="dashboard-cards"
+                style={{ height: "250px", padding: "10px" }}
+              >
                 <div className="header">
-                  <h3>{i?.name}</h3>
+                  <h3 style={{ fontSize: "12px" }}>{i?.name}</h3>
                 </div>
                 <div className="survey-chart">
                   {index % 2 !== 0 ? (
-                    <div className="h-auto w-auto">
+                    <div
+                      className="h-100 w-100"
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
                       <Doughnut data={doughnutData} options={doughnutOptions} />
                     </div>
                   ) : (
