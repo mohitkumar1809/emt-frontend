@@ -26,16 +26,6 @@ const Sidebar = () => {
       : false;
   };
 
-  // const removeNavbar = () => {
-  //   let element = document.getElementById("admin-sideNav");
-  //   let element2 = document.getElementsByClassName("offcanvas-backdrop");
-  //   let body = document.body;
-  //   body.style.overflow = "";
-  //   body.style.paddingRight = "";
-  //   element && element.classList.remove("show");
-  //   element2 && Array.from(element2).forEach((el) => el.remove());
-  // };
-
   useEffect(() => {
     const getMenuNameByUrl = (url) => {
       for (const [key, value] of Object.entries(activeSubMenuData)) {
@@ -82,7 +72,6 @@ const Sidebar = () => {
                     item.subItems &&
                     item.MenuName.replace(/[^a-zA-Z0-9]/g, "").toLowerCase()
                   }
-                  onClick={() => !item.subItems && removeNavbar()}
                 >
                   <div className="side-menu__icon">
                     <i
