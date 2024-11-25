@@ -17,8 +17,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <InfoCard type={"doughnut"} keyName={"Dashboard"} />
-      <InfoCard type={"doughnut"} keyName={"Dashboard"} />
+      <InfoCard keyName={"Dashboard"} />
     </>
   );
 };

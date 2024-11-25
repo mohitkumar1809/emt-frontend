@@ -124,7 +124,7 @@ const sampleData = {
   ],
 };
 
-const InfoCard = ({ keyName, type }) => {
+const InfoCard = ({ keyName }) => {
   const user = useSelector((state) => state.user);
   const keyDetails = user?.allowedmoduleWithActions[keyName] || [];
 
@@ -142,7 +142,7 @@ const InfoCard = ({ keyName, type }) => {
                   <h3 style={{ fontSize: "12px" }}>{i?.name}</h3>
                 </div>
                 <div className="survey-chart">
-                  {index % 2 !== 0 ? (
+                  {index > 2 ? (
                     <div
                       className="h-100 w-100"
                       style={{ display: "flex", justifyContent: "center" }}
