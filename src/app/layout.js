@@ -6,7 +6,6 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 import { persistor, store } from "@/redux/store";
 import "@/styles/_main.scss";
-import "@/styles/v1style/feather-icons.css";
 import "@/styles/v1Style/bootstrap-icons.min.css";
 import { PersistGate } from "redux-persist/integration/react";
 import Loader from "@/components/Loader";
